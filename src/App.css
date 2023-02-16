@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  background: #080814;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+  padding-bottom: 400px;
+}
+
+@media (min-width:280px) and (max-width:560px){
+  .App{
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 250px;
+    padding: 50px 0 300px 30px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .App{
+    width: auto;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    gap: 300px;
+    padding: 50px 0 300px 30px;
+  }
+}

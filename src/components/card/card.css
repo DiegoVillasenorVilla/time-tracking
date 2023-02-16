@@ -1,0 +1,103 @@
+.card-top-container {
+  width: 255px;
+  height: 160px;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 1;
+}
+
+.card-bottom-container {
+  width: 255px;
+  height: 199px;
+  background: #1c204b;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-bottom-container:hover {
+  background: #33397a;
+  cursor: pointer;
+}
+
+.card-bottom-container_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+  gap: 100px;
+}
+
+.card-bottom-container_header p {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.card-bottom-container_body {
+  margin-left: 30px;
+}
+
+.hours-paragraph {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 66px;
+  color: #ffffff;
+}
+
+.last_hours-paragraph {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #bbc0ff;
+}
+
+@media (min-width: 280px) and (max-width: 560px){
+  .card-top-container {
+    width: 327px;
+  }
+
+  .card-bottom-container {
+    width: 327px;
+    height: 122px;
+  }
+  
+  .card-bottom-container_body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .hours-paragraph{
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  /*.card-top-container {
+    width: 230px;
+  }
+
+  .card-bottom-container {
+    width: 230px;
+    height: 170px;
+  }*/
+  
+}
